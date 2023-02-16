@@ -1,8 +1,7 @@
-import math
-a=int(input())
-n=1
-while 2**n<=a:
-    n+=1
-if 2**n>a:
-    n=n-1
-print(n,2**n)
+n = int(input())
+two = 2
+power = 1
+while two <= n:
+    two *= 2
+    power += 1
+print(power - 1, two // 2)

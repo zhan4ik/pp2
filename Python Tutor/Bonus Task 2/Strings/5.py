@@ -1,3 +1,5 @@
 s = str(input())
 
-print(s.find('f'))
+for i in range(len(s)):
+    if s[i] == 'f':
+        print(i)

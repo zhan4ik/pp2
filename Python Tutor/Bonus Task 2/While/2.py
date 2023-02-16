@@ -1,7 +1,5 @@
-a=int(input())
-i=2
-while i<=a:
-    if a%i==0:
-        print(i)
-        break
-    i+=1
+n = int(input())
+i = 2
+while n % i != 0:
+    i += 1
+print(i)

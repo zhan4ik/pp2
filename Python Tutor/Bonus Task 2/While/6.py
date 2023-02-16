@@ -1,7 +1,7 @@
-sum=0
+sum = 0
 while True:
-    a=int(input())
-    sum+=a
-    if a==0:
+    a = int(input())
+    sum += a
+    if a == 0:
         break
 print(sum)

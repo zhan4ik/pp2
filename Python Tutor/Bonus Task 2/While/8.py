@@ -1,9 +1,9 @@
-max=0
+max = 0
 while True:
-    a=int(input())
-    if a==0:
+    a = int(input())
+    if a == 0:
         break
-    if a>max:
-        max=a
+    if a > max:
+        max = a
 print(max)
 
