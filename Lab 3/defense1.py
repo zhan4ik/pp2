@@ -1,9 +1,16 @@
-#class Human
-#gender = m/f
-#printInfo()
-#printTriangle(n)
+class Human:
+    def __init__(self, gender):
+        self.gender = gender
+    def printInfo(self):
+        print(self.gender)
+        
+    def printTriangle(self, n):
+        for i in range(n):
+            for j in range(i+1):
+                print(j+1, end="")
+            print("")
 
-class Person:
+class Person(Human):
     def __init__(self, name, nationality):
         self.name = name
         self.nationality = nationality
@@ -30,6 +37,9 @@ class Teacher(Person):
     def printInfo(self):
         print(self.name, self.nationality, self.teacher_id)
 
+objhuman = Human("Male")
+objhuman.printInfo()
+objhuman.printTriangle(5)
 
 obj = Person("Donald", "American")
 obj.printInfo()
